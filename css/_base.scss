@@ -1,0 +1,41 @@
+html{
+	box-sizing: border-box;
+	width:100%;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body{
+	width:100%;
+}
+
+header{
+	width:100%;
+	float:left;
+}
+
+a{
+	color:white;
+	&:link {
+	    text-decoration: none;
+	}
+
+	&:visited {
+	    text-decoration: none;
+	}
+
+	&:hover {
+	    text-decoration: none;
+	}
+
+	&:active {
+	    text-decoration: none;
+	}
+}
+
+ul{
+	list-style:none;
+}
+
