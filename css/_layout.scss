@@ -4,3 +4,12 @@ $headColor: #3CB371;
 .l-header{
 	background:$headColor;
 }
+
+.l-gallery{
+	background:red;
+	ul{
+		display:flex;
+		flex-direction:row;
+		justify-content:center;
+	}
+}
