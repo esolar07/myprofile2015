@@ -28,15 +28,32 @@ a {
 ul {
   list-style: none; }
 
+footer {
+  width: 100%;
+  background: red;
+  margin-top: 25%;
+  padding: 10px; }
+
 .l-header {
-  background: #3CB371; }
+  background: #3CB371;
+  padding-top: 5%; }
+  @media screen and (min-width: 715px) {
+    .l-header {
+      padding-top: 0; } }
 
 .l-gallery {
-  background: red; }
-  .l-gallery ul {
+  width: 90%;
+  margin: 0 auto;
+  padding-top: 20px; }
+  .l-gallery-sites {
+    width: 100%;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center; }
+    @media screen and (min-width: 620px) {
+      .l-gallery-sites {
+        flex-direction: row;
+        flex-wrap: wrap; } }
 
 .m-logo {
   text-align: center; }
@@ -67,6 +84,18 @@ ul {
       margin: 20px; }
 
 .m-site {
-  margin: 30px; }
+  margin: 35px; }
+
+.m-socialicon {
+  width: 50px;
+  height: 50px;
+  margin: 0 2px; }
+
+.m-foot {
+  width: 50%;
+  margin: 0 auto;
+  text-align: center;
+  font-sizs: 0.75em;
+  /* 1.2px / 16px */ }
 
 /*# sourceMappingURL=main.css.map */
