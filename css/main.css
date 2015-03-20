@@ -30,7 +30,6 @@ ul {
 
 footer {
   width: 100%;
-  background: red;
   margin-top: 25%;
   padding: 10px; }
 
@@ -84,7 +83,7 @@ footer {
       margin: 20px; }
 
 .m-site {
-  margin: 35px; }
+  margin: 35px auto; }
 
 .m-socialicon {
   width: 50px;
