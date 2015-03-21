@@ -24,3 +24,17 @@ $headColor: #3CB371;
 		}
 	}
 }
+
+.l-contact{
+	width:60%;
+	margin:0 auto;
+	padding: 200px 0 30px;
+}
+
+.l-about{
+	@extend .l-contact;
+	@media screen and (min-width:715px){
+		width:80%;
+		font-size: 1.5em; //24px
+	}
+}

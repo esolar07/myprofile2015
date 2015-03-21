@@ -36,6 +36,35 @@
 	margin:35px auto;
 }
 
+.m-contactDetails{
+	margin-top: 25px;
+}
+
+.m-aboutme{
+	width:100%;
+	font-size: 1.5em; //24px 
+	display:flex;
+	flex-direction:column;
+	@media screen and (min-width:715px){
+			flex-direction:row;
+		}
+}
+
+.aboutCont{
+	width:60%;
+}
+
+.aboutimage{
+	max-width: 100%;
+	margin:0 auto;
+	img{
+		-webkit-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25% );
+	 	-moz-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25% );
+	  	clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25% );
+	}
+
+}
+
 .m-socialicon{
 	width:50px;
 	height:50px;
@@ -46,5 +75,5 @@
 	width:50%;
 	margin:0 auto;
 	text-align: center;
-	font-sizs: 0.75em; /* 1.2px / 16px */
+	font-size: 0.75em; // 1.2px 
 }

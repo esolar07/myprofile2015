@@ -8,7 +8,11 @@ html {
   padding: 0; }
 
 body {
-  width: 100%; }
+  width: 100%;
+  font-family: 'Droid Sans', sans-serif; }
+
+iframe {
+  overflow: hidden; }
 
 header {
   width: 100%;
@@ -25,12 +29,19 @@ a {
   a:active {
     text-decoration: none; }
 
+h1 {
+  font-family: 'Bevan', cursive; }
+
+h2 {
+  font-family: 'Oswald', sans-serif;
+  padding-bottom: 15px; }
+
 ul {
   list-style: none; }
 
 footer {
   width: 100%;
-  margin-top: 25%;
+  margin-top: 20%;
   padding: 10px; }
 
 .l-header {
@@ -53,6 +64,16 @@ footer {
       .l-gallery-sites {
         flex-direction: row;
         flex-wrap: wrap; } }
+
+.l-contact, .l-about {
+  width: 60%;
+  margin: 0 auto;
+  padding: 200px 0 30px; }
+
+@media screen and (min-width: 715px) {
+  .l-about {
+    width: 80%;
+    font-size: 1.5em; } }
 
 .m-logo {
   text-align: center; }
@@ -85,6 +106,29 @@ footer {
 .m-site {
   margin: 35px auto; }
 
+.m-contactDetails {
+  margin-top: 25px; }
+
+.m-aboutme {
+  width: 100%;
+  font-size: 1.5em;
+  display: flex;
+  flex-direction: column; }
+  @media screen and (min-width: 715px) {
+    .m-aboutme {
+      flex-direction: row; } }
+
+.aboutCont {
+  width: 60%; }
+
+.aboutimage {
+  max-width: 100%;
+  margin: 0 auto; }
+  .aboutimage img {
+    -webkit-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    -moz-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%); }
+
 .m-socialicon {
   width: 50px;
   height: 50px;
@@ -94,7 +138,6 @@ footer {
   width: 50%;
   margin: 0 auto;
   text-align: center;
-  font-sizs: 0.75em;
-  /* 1.2px / 16px */ }
+  font-size: 0.75em; }
 
 /*# sourceMappingURL=main.css.map */

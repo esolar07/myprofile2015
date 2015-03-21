@@ -11,6 +11,11 @@ html{
 
 body{
 	width:100%;
+	font-family: 'Droid Sans', sans-serif;
+}
+
+iframe{
+    overflow:hidden;
 }
 
 header{
@@ -37,12 +42,21 @@ a{
 	}
 }
 
+h1{
+	font-family: 'Bevan', cursive;
+}
+
+h2{
+	font-family: 'Oswald', sans-serif;
+	padding-bottom:15px;
+}
+
 ul{
 	list-style:none;
 }
 
 footer{
 	width:100%;
-	margin-top:25%;
+	margin-top:20%;
 	padding: 10px;
 }
