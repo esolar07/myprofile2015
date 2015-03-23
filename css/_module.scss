@@ -4,7 +4,7 @@
 	text-align: center;
 	@media screen and (min-width:715px){
 		float:left;
-	    margin-right:5%;
+	    margin-left:5%;
 	    text-align: left;
 	    width: 45%;
 	}
@@ -28,12 +28,34 @@
   		li{
   			display:inline-block;
   			margin:20px;
+  			a:hover{
+  				color: white;
+  			}
+  			@media screen and (min-width:715px){
+  				vertical-align: middle; 
+  				line-height: 50px;
+  			}
   		}
 	}
 }
 
 .m-site{
 	margin:35px auto;
+	perspective: 250px;	
+
+	img{
+		transition: 100ms;
+  		transform: translateZ(0px);
+		&:hover{
+    		box-shadow: 0px 0px 10px rgba(0,0,0,0.8);
+            transform: translateZ(35px) rotate(3deg);
+            z-index:1;
+        }
+	}
+}
+
+.contactMessage{
+	margin-top: 50px;
 }
 
 .m-contactDetails{
@@ -51,7 +73,12 @@
 }
 
 .aboutCont{
-	width:60%;
+	width:100%;
+	margin-top: 50px;
+	@media screen and (min-width:715px){
+		width:60%;
+		margin-top: 0;
+	}
 }
 
 .aboutimage{
@@ -62,7 +89,14 @@
 	 	-moz-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25% );
 	  	clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25% );
 	}
+	@media screen and (max-width:715px){
+			display: none;
+		}
 
+}
+
+.m-twit{
+	color:#4682B4;
 }
 
 .m-socialicon{

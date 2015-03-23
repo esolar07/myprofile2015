@@ -11,6 +11,9 @@ body {
   width: 100%;
   font-family: 'Droid Sans', sans-serif; }
 
+img {
+  max-width: 100%; }
+
 iframe {
   overflow: hidden; }
 
@@ -46,7 +49,8 @@ footer {
 
 .l-header {
   background: #3CB371;
-  padding-top: 5%; }
+  padding-top: 5%;
+  margin-bottom: 30px; }
   @media screen and (min-width: 715px) {
     .l-header {
       padding-top: 0; } }
@@ -68,7 +72,8 @@ footer {
 .l-contact, .l-about {
   width: 60%;
   margin: 0 auto;
-  padding: 200px 0 30px; }
+  padding: 200px 0 30px;
+  font-size: 1.5em; }
 
 @media screen and (min-width: 715px) {
   .l-about {
@@ -80,7 +85,7 @@ footer {
   @media screen and (min-width: 715px) {
     .m-logo {
       float: left;
-      margin-right: 5%;
+      margin-left: 5%;
       text-align: left;
       width: 45%; } }
 
@@ -102,9 +107,26 @@ footer {
     .m-navi ul li {
       display: inline-block;
       margin: 20px; }
+      .m-navi ul li a:hover {
+        color: white; }
+      @media screen and (min-width: 715px) {
+        .m-navi ul li {
+          vertical-align: middle;
+          line-height: 50px; } }
 
 .m-site {
-  margin: 35px auto; }
+  margin: 35px auto;
+  perspective: 250px; }
+  .m-site img {
+    transition: 100ms;
+    transform: translateZ(0px); }
+    .m-site img:hover {
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.8);
+      transform: translateZ(35px) rotate(3deg);
+      z-index: 1; }
+
+.contactMessage {
+  margin-top: 50px; }
 
 .m-contactDetails {
   margin-top: 25px; }
@@ -119,7 +141,12 @@ footer {
       flex-direction: row; } }
 
 .aboutCont {
-  width: 60%; }
+  width: 100%;
+  margin-top: 50px; }
+  @media screen and (min-width: 715px) {
+    .aboutCont {
+      width: 60%;
+      margin-top: 0; } }
 
 .aboutimage {
   max-width: 100%;
@@ -128,6 +155,12 @@ footer {
     -webkit-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
     -moz-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
     clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%); }
+  @media screen and (max-width: 715px) {
+    .aboutimage {
+      display: none; } }
+
+.m-twit {
+  color: #4682B4; }
 
 .m-socialicon {
   width: 50px;

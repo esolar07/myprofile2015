@@ -4,6 +4,7 @@ $headColor: #3CB371;
 .l-header{
 	background:$headColor;
 	padding-top:5%;
+	margin-bottom: 30px;
 	@media screen and (min-width:715px){
 		padding-top: 0;
 	}
@@ -29,6 +30,7 @@ $headColor: #3CB371;
 	width:60%;
 	margin:0 auto;
 	padding: 200px 0 30px;
+	font-size: 1.5em; //24px 
 }
 
 .l-about{
