@@ -28,8 +28,15 @@
   		li{
   			display:inline-block;
   			margin:20px;
-  			a:hover{
-  				color: white;
+  			a{
+  				border-bottom: 1px solid;
+  				padding:5px;	
+  				&:hover{
+  					color: white;
+  					border-radius: 3px;
+  					background: rgba(255,255,255,0.3);
+  					transition: background 1.5s;
+  				}
   			}
   			@media screen and (min-width:715px){
   				vertical-align: middle; 
@@ -42,7 +49,6 @@
 .m-site{
 	margin:35px auto;
 	perspective: 250px;	
-
 	img{
 		transition: 100ms;
   		transform: translateZ(0px);

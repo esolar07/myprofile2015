@@ -16,11 +16,17 @@ $headColor: #3CB371;
 	padding-top: 20px;
 	&-sites{
 		width:100%;
+		margin:0 auto;
+		display: -ms-flex;
 		display:flex;
+		-ms-flex-direction:column;
 		flex-direction:column;
+		-ms-justify-content:center;
 		justify-content:center;
 		@media screen and (min-width:620px){
+			-ms-direction:row;
 			flex-direction:row;
+			-ms-flex-wrap:wrap;
 			flex-wrap:wrap;
 		}
 	}

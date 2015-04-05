@@ -9,6 +9,8 @@ html {
 
 body {
   width: 100%;
+  height: auto;
+  min-height: 100% !important;
   font-family: 'Droid Sans', sans-serif; }
 
 img {
@@ -16,6 +18,9 @@ img {
 
 iframe {
   overflow: hidden; }
+  @media screen and (max-width: 715px) {
+    iframe {
+      width: 100%; } }
 
 header {
   width: 100%;
@@ -61,12 +66,18 @@ footer {
   padding-top: 20px; }
   .l-gallery-sites {
     width: 100%;
+    margin: 0 auto;
+    display: -ms-flex;
     display: flex;
+    -ms-flex-direction: column;
     flex-direction: column;
+    -ms-justify-content: center;
     justify-content: center; }
     @media screen and (min-width: 620px) {
       .l-gallery-sites {
+        -ms-direction: row;
         flex-direction: row;
+        -ms-flex-wrap: wrap;
         flex-wrap: wrap; } }
 
 .l-contact, .l-about {
@@ -107,8 +118,14 @@ footer {
     .m-navi ul li {
       display: inline-block;
       margin: 20px; }
-      .m-navi ul li a:hover {
-        color: white; }
+      .m-navi ul li a {
+        border-bottom: 1px solid;
+        padding: 5px; }
+        .m-navi ul li a:hover {
+          color: white;
+          border-radius: 3px;
+          background: rgba(255, 255, 255, 0.3);
+          transition: background 1.5s; }
       @media screen and (min-width: 715px) {
         .m-navi ul li {
           vertical-align: middle;
